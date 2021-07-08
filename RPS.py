@@ -1,6 +1,22 @@
+# ----------------------------------------
+# These are the modules 
+# that we will need. 
+# You dont have to 
+# Install these as 
+# they are auomatically
+# installed why you 
+# Install Python
 import random
 import time
+# ----------------------------------------
 
+
+
+
+# ----------------------------------------
+# Intro
+# This is also where the TIME module gets
+# Used
 print("Rock, Paper, Sissers")
 time.sleep(3)
 print('''
@@ -11,14 +27,37 @@ For paper: p
 For sissers: s
 
 ''')
+# ----------------------------------------
 
+
+# This is the main part of the code, here
+# First the program makes its desicion
+# Here is also when the RANDOM & Time module 
+# Gets used. After that is aske's 
+# The user to choose its operation
+# And then it compares the two
+# to see who won!
+
+# This is a variable that will always be true =>
 i = True
 
+
+# Here is when the while loop starts =>
 while i == True:
     
+    
     time.sleep(3)
+    # ------------------------------
+    # Here is how the bot chooses his operation.
     operations = ["rock", "paper", "sissers"]
     operation_choice = random.choice(operations)
+    # ------------------------------
+
+
+    # ------------------------------
+    # Here is when the user get's asked
+    # And then based on that the might win, lose
+    # Or have a tie
     input_ = input("Choose: ")
     if input_ == "r":
         if operation_choice == "rock":
@@ -61,6 +100,15 @@ while i == True:
             print(f"I choose {operation_choice}")
             time.sleep(2)
             print("Looks like its a tie!")
+
+        # ------------------------------
+
+
+        # ------------------------------
+        # If the user doesnt enter the right words
+        # Then this program gets executed
+        # This is great because normally
+        # It would yell at them.
     else:
         print("Hmm... I dont get what you are saying")
         time.sleep(2)
@@ -72,3 +120,5 @@ while i == True:
     For sissers: s
 
     ''')
+        # ------------------------------
+# ----------------------------------------
